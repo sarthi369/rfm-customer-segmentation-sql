@@ -62,32 +62,35 @@ rfm-customer-segmentation-sql/
 
 ## 📊 Key Output
 
-| user_id | r_score | f_score | m_score | segment           |
-| ------- | ------- | ------- | ------- | ----------------- |
-|   104	       5	5	   4	     High Value	    |	    
-|   105	       4	2	   2	    New Customers   |
-|   102	       3	3	   1	 Mid Value Customers|
-|   101	       2	4	   5	  Loyal but At Risk |
-|   103	       1	1	   3	Mid Value Customers |
+#### 🔹 Customer Segmentation Table
+
+| user_id | r_score | f_score | m_score | customer_segment    |
+| ------- | ------- | ------- | ------- | ------------------- |
+| 104     | 5       | 5       | 4       | High Value          |
+| 105     | 4       | 2       | 2       | New Customers       |
+| 102     | 3       | 3       | 1       | Mid Value Customers |
+| 101     | 2       | 4       | 5       | Loyal but At Risk   |
+| 103     | 1       | 1       | 3       | Mid Value Customers |
+
+This segmentation highlights different customer behaviors based on recency, frequency, and spending patterns, enabling targeted marketing and retention strategies.
 
 ---
 
 ## 📈 Key Insights
 
-* High-value users contribute significantly to revenue and should be retained
-* Some users show high spend but low recency → **reactivation opportunity**
-* Low frequency users may require engagement strategies
+* **User 104** is a high-value customer with strong engagement and high spending → should be retained and nurtured
+* **User 101** has high spending but low recency → indicates a **valuable but inactive user (reactivation opportunity)**
+* **User 105** is a new customer → requires onboarding and engagement to improve retention
+* Mid-value customers represent stable users with moderate activity → potential for upselling
 
 ---
 
 ## 🧠 Business Interpretation
 
-* Users with high monetary but low recency are **valuable but inactive**
-* These users can be targeted with:
-
-  * Personalized offers
-  * Re-engagement campaigns
-  * Loyalty incentives
+* High-value users should be targeted with **loyalty programs and exclusive offers**
+* At-risk high spenders should be re-engaged using **personalized campaigns and incentives**
+* New users need **strong onboarding and early engagement strategies**
+* Mid-value users can be converted into high-value customers through **cross-sell and upsell strategies**
 
 ---
 
@@ -95,20 +98,21 @@ rfm-customer-segmentation-sql/
 
 * Applied RFM segmentation using SQL
 * Used window functions for scoring
-* Converted raw data into actionable business segments
+* Converted raw transactional data into actionable business insights
+* Built customer segments for real-world marketing use cases
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates how behavioral data can be transformed into meaningful customer segments to drive business decisions.
+This project demonstrates how SQL can be used to transform raw customer transaction data into meaningful segments that drive business strategy and decision-making.
 
 ---
 
 ## 🔗 Future Improvements
 
-* Build dashboard in Power BI
-* Add customer demographics
-* Implement predictive churn model
+* Build dashboard in Power BI / Tableau
+* Add customer demographics for deeper segmentation
+* Implement churn prediction models
 
 ---
