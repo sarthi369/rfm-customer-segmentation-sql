@@ -1,0 +1,23 @@
+CREATE TABLE transaction (
+    transaction_id INT PRIMARY KEY,
+    user_id INT,
+    transaction_date DATE,
+    revenue DECIMAL(10,2)
+);
+
+INSERT INTO transaction (transaction_id, user_id, transaction_date, revenue) VALUES
+(1, 101, '2024-01-05', 500),
+(2, 101, '2024-01-20', 300),
+(3, 101, '2024-02-15', 700),
+
+(4, 102, '2024-01-10', 200),
+(5, 102, '2024-03-01', 400),
+
+(6, 103, '2024-02-05', 1000),
+
+(7, 104, '2024-01-25', 150),
+(8, 104, '2024-02-10', 250),
+(9, 104, '2024-02-28', 350),
+(10, 104, '2024-03-05', 450),
+
+(11, 105, '2024-03-02', 800);
